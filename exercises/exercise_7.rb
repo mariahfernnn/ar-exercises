@@ -15,12 +15,6 @@ pick_store = gets.chomp
 store = Store.new(name: pick_store)
 puts store.valid?
 puts "What is the error?: ", store.errors.messages
-# puts "Creating a new store: ", Store.create(name: "#{pick_store}").valid?
-# puts "What is the error?: ", Store.errors
-
-# person = Person.new
-# person.valid? # => false
-# person.errors
 
 # Employee.create(first_name: nil).valid?
 # Employee.create(last_name: nil).valid?

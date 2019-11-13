@@ -6,6 +6,10 @@ puts "Exercise 3"
 puts "----------"
 
 # Your code goes here ...
+@store3 = Store.find_by(id: 3)
+puts "Store3: ", @store3.name
+@store3 = Store.destroy(3)
+puts "Store.count: ", Store.count
 
 # Load the third store (into @store3) as you did the other two before.
 # Using Active Record's destroy method, delete the store from the database.
